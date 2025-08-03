@@ -1,0 +1,103 @@
+.sidebar {
+    position: fixed;
+    top: 55px;
+    left: 10px;
+    width: 170px;
+    height: calc(100vh - 55px); /* Adjust to fit full height minus header */
+    background-color: white;
+    z-index: 200;
+    overflow-y: auto; /* Enables scrolling */
+    scrollbar-width: thin; /* Makes the scrollbar thinner for Firefox */
+    scrollbar-color: transparent transparent; /* Initially hidden */
+    transition: scrollbar-color 0.3s ease-in-out;
+}
+
+/* Hide scrollbar in Chrome, Edge, and Safari */
+.sidebar::-webkit-scrollbar {
+    width: 6px; /* Small scrollbar */
+    background: transparent; /* Fully transparent */
+}
+.sidebar:hover {
+    scrollbar-color: #aaa transparent; /* For Firefox */
+}
+
+ .first-sidebar,
+ .you,
+ .explore,
+ /* .last, */
+ .more-from-youtube,
+ .subscriptions{
+     border-bottom-width: 1px;
+     border-bottom-style: solid;
+     border-bottom-color:rgb(162, 156, 156);
+     padding-top: 15px;
+     padding-bottom: 10px;
+ } 
+  .Explore,
+.mfy,
+.s{
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+ }  
+ .sidebar-link{
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} 
+.sidebar-link:hover{
+    background-color:rgb(236, 227, 227);
+    border-radius: 10px;
+    cursor: pointer;
+   
+    
+} 
+.sidebar-link img{
+    height: 20px;
+   
+}
+.sidebar-link div{
+    font-size: 12px;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 500;
+    margin-left: 15px;
+
+    
+}
+
+.sidebar-link {
+    position: relative;
+}
+.sidebar-link {
+    position: relative; /* Ensures tooltip is positioned relative to this */
+}
+
+.sidebar-link::after {
+    content: attr(data-text);
+    position: absolute;
+    background-color: rgb(43, 42, 42);
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    padding: 5px 8px;
+    font-size: 12px;
+    white-space: nowrap;
+    top: 100%; /* Places tooltip directly below the link */
+    left: 60%; /* Centers tooltip below the link */
+    transform: translateX(-50%) translateY(5px); /* Adjusts position slightly down */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    z-index: 1000; /* Ensures tooltip appears above other elements */
+    transition-delay: 0.3s;
+}
+
+.sidebar-link:hover::after {
+    opacity: 1;
+    visibility: visible;
+}

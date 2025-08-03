@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>youtube-clone</title>
+    <link rel="stylesheet" href="youtube-mainpage.css">
+    <link rel="stylesheet" href="youtube-header.css">
+    <link rel="stylesheet" href="youtube-sidebar.css">
+    <link rel="stylesheet" href="youtube-categorybar.css"> 
+</head>
+<body>   
+  <div class="header">
+            <div class="left-section">
+                <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="">
+                <img class="youtube-logo" src="icons/youtube-logo.svg" alt="">
+            </div>
+           
+            <div class="middle-section">
+                <div class="search-bar-container">
+                    <input class="search-bar" type="search" placeholder="Search">
+                    <button class="search-button">
+                        <img class="search-icon" src="icons/search.svg" alt="">
+                        <div class="tooltip">Search</div>
+                    </button>
+                </div>
+                <button class="voice-search-button">
+                    <img class="voice-search-icon" src="icons/voice-search-icon.svg" alt="">
+                    <div class="tooltip">search with your voice</div>
+                </button>
+            </div>
+            
+            
+            <div class="right-section">
+                <button class="create-icon">
+                    <p class="plus">+</p>
+                    <p class="create">create</p>
+                    <div class="tooltip">create</div>
+                </button>
+                 <div data-text="notifications" class="notification-container">
+                    <img class="notification-icon" src="icons/notifications.svg" alt="">
+                    <div class="notification-count">
+                        2
+                    </div>
+                    
+                </div>
+                <img class="profile-user-img" src="channels/profile-user-image.jpg" alt="">
+            </div>
+           
+    </div>
+        
+     <div class="category-bar">
+        <button class="category active" data-text="All">All</button>
+        <button class="category" data-text="Computer Programming">Computer Programming</button>
+        <button class="category" data-text="Study skills">Study skills</button>
+        <button class="category" data-text="News">News</button>
+        <button class="category" data-text="Indian institute of technology">Indian institute of technology</button>
+        <button class="category" data-text="Microsoft">Microsoft</button>
+        <button class="category" data-text="Thoughts">Thoughts</button>
+        <button class="category" data-text="Strategies">Strategies</button>
+        <button class="category" data-text="Live">Live</button>
+        <button class="category" data-text="Gadgets">Gadgets</button>
+        <button class="category" data-text="Recently Uploaded">Recently Uploaded</button>
+        <button class="category" data-text="Watched">Watched</button>
+        <button class="category" data-text="New to you">New to you</button>
+    </div>
+    
+
+     <div class="sidebar">
+        <div class="first-sidebar">
+                <div data-text="Home" class="sidebar-link"> 
+                    <img src="https://img.icons8.com/?size=100&id=83326&format=png&color=000000" alt="">
+                    <div>Home</div>
+                </div>
+                <div data-text="Shorts" class="sidebar-link">
+                    <img src="https://img.icons8.com/?size=100&id=ajczeHCWXbyR&format=png&color=000000" alt="">
+                    <div data-text="shorts">Shorts</div>
+                </div>
+                
+                <div data-text="Subscriptions" class="sidebar-link">
+                    <img src="https://img.icons8.com/?size=100&id=87581&format=png&color=000000" alt="">
+                    <div data-text="Subscriptions">Subscriptions</div>
+                </div>
+        </div>
+         
+        <div class="you">
+            <div class="sidebar-link">You</div>
+            <div data-text="HIstory" class="sidebar-link">
+                <img src="https://img.icons8.com/?size=100&id=6904&format=png&color=000000" alt="">
+                <div data-text="History">History</div>
+            </div>
+            <div data-text="Playlist" class="sidebar-link">
+                <img src="https://img.icons8.com/?size=100&id=24520&format=png&color=000000" alt="">
+                <div>Playlist</div>
+            </div>
+            <div data-text="Your videos" class="sidebar-link">
+                <img src="https://img.icons8.com/?size=100&id=111348&format=png&color=000000" alt="">
+                <div>Your videos</div>
+            </div>
+            <div data-text="Watch later" class="sidebar-link">
+                <img src="https://img.icons8.com/?size=100&id=jtEHZGpk0l5o&format=png&color=000000" alt="">
+                <div>Watch later</div>
+            </div>
+            <div data-text="Liked-videos" class="sidebar-link">
+                <img src="https://img.icons8.com/?size=100&id=82788&format=png&color=000000" alt="">
+                <div>Liked videos</div>
+            </div>
+
+            <div data-text="Downloads" class="sidebar-link">
+                <img src="https://img.icons8.com/?size=100&id=14100&format=png&color=000000" alt="">
+                <div>Downloads</div>
+            </div>
+        </div>
+        
+        <div class="subscriptions">
+              <div class="s">Subscriptions</div>
+              <div data-text="All subscriptions" class="sidebar-link">
+                <img src="https://img.icons8.com/?size=100&id=82749&format=png&color=000000" alt="">
+                <div>All subscriptions</div>
+              </div>
+        </div>
+
+     <div class="explore">
+            <div class="Explore">Explore</div>
+            <div data-text="Trending" class="sidebar-link">
+                <img src="https://img.icons8.com/?size=100&id=HZ2ukyyEDgOj&format=png&color=000000" alt="">
+                <div>Trending</div>
+            </div>
+            <div data-text="Shopping" class="sidebar-link">
+                <img src="https://img.icons8.com/?size=100&id=Cn3bRFTiQ6Tm&format=png&color=000000" alt="">
+                <div>shopping</div>
+            </div>
+            <div data-text="Music" class="sidebar-link">
+                <img src="https://img.icons8.com/?size=100&id=QmraoWycr0iM&format=png&color=000000" alt="">
+                <div>Music</div>
+            </div>
+            <div data-text="Films" class="sidebar-link">
+                <img src="https://img.icons8.com/?size=100&id=FoDhNGl8I5hv&format=png&color=000000" alt="">
+                <div>Films</div>
+            </div>
+            <div data-text="Live" class="sidebar-link">
+                <img src="https://img.icons8.com/?size=100&id=vjV6WNgc4Xwq&format=png&color=000000" alt="">
+                <div>Live</div>
+            </div>
+            <div data-text="Gaming" class="sidebar-link">
+                <img src="https://img.icons8.com/?size=100&id=Cn3bRFTiQ6Tm&format=png&color=000000" alt="">
+                <div>Gaming</div>
+            </div>
+            <div data-text="News" class="sidebar-link">
+                <img src="https://img.icons8.com/?size=100&id=0XwEi0yisdO8&format=png&color=000000" alt="">
+                <div>News</div>
+            </div>
+            <div data-text="sports" class="sidebar-link">
+                <img src="https://img.icons8.com/?size=100&id=6YtrB5VnlPqY&format=png&color=000000" alt="">
+                <div>Sport</div>
+            </div>
+            <div data-text="Courses" class="sidebar-link">
+                <img src="https://img.icons8.com/?size=100&id=78033&format=png&color=000000" alt="">
+                <div>Courses</div>
+            </div>
+            <div data-text="Podcast" class="sidebar-link">
+                <img src="https://img.icons8.com/?size=100&id=87745&format=png&color=000000" alt="">
+                <div>Podcast</div>
+            </div>
+            
+      </div> 
+        <div class="more-from-youtube">
+            <div class="mfy">More from youtube</div>
+            <div data-text="Youtube premium" class="sidebar-link">
+                <img src="https://img.icons8.com/?size=100&id=19318&format=png&color=000000" alt="">
+                <div>Youtube premium</div>
+            </div>
+            <div data-text="Youtube studio" class="sidebar-link">
+                <img src="https://img.icons8.com/?size=100&id=RffCjm5IOnEC&format=png&color=000000" alt="">
+                <div>Youtube studio</div>
+            </div>
+            <div data-text="Youtube music" class="sidebar-link">
+               <img src="https://img.icons8.com/?size=100&id=V1cbDThDpbRc&format=png&color=000000" alt="">
+               <div>youtube music</div>
+            </div>
+            <div data-text="Youtube kids" class="sidebar-link">
+                 <img src="https://img.icons8.com/?size=100&id=80495&format=png&color=000000" alt="">
+                 <div>Youtube kids</div>
+            </div>
+        </div>
+        
+        <div class="last">
+            <div data-text="Settings" class="sidebar-link">
+                <img src="https://img.icons8.com/?size=100&id=364&format=png&color=000000" alt="">
+                 <div>Settings</div>
+            </div>
+            <div data-text="Report history" class="sidebar-link">
+                <img src="https://img.icons8.com/?size=100&id=94694&format=png&color=000000" alt="">
+                <div>Report history</div>
+            </div>
+            <div data-text="Help" class="sidebar-link">
+                <img src="https://img.icons8.com/?size=100&id=QbUVCJcLUR8w&format=png&color=000000" alt="">
+                <div>Help</div>
+            </div>
+            <div data-text="send feedback" class="sidebar-link">
+                <img src="https://img.icons8.com/?size=100&id=93118&format=png&color=000000" alt="">
+               <div>send feedback</div> 
+            </div>
+         </div>
+    </div>
+
+   
+   
+<div class="main-page">
+        <div class="video-block">
+            <div class="thumbnail-div">
+               <img class="thumbnail" src="thumbnails/youtube-thumbnail1.jpg" alt="">
+               <div class="video-time">9:47</div>
+            </div>
+            <div class="video-info">
+                <div class="profile-div">
+                    <img  class="profile" src="channels/youtube-channel1.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p class="title">Watch this to Become the GOD of Time Management</p>
+                    <p class="author">Tharun Speaks</p>
+                    <p class="time">260K views &#183; 2 weeks ago</p>
+                </div>
+             </div>
+        </div>
+
+
+
+
+           <div class="video-block">
+                <div class="thumbnail-div">
+                   <img class="thumbnail" src="thumbnails/youtube-thumbnail2.jpg" alt="">
+                   <div class="video-time">9:44</div>
+                </div>
+                <div class="video-info">
+                    <div class="profile-div">
+                        <img  class="profile" src="channels/youtube-channel2.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="title">How i work 10 hours daily(without burning out)</p>
+                        <p class="author">sankho kun</p>
+                        <p class="time">54K views &#183; 11 days ago</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-block">
+                <div class="thumbnail-div">
+                   <img class="thumbnail" src="thumbnails/youtube-thumbnail3.jpg" alt="">
+                   <div class="video-time">8:01</div>
+                </div>
+                <div class="video-info">
+                    <div class="profile-div">
+                        <img  class="profile" src="channels/youtube-channel3.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="title"> How I started coding from 0 and cracked Google | Best Free Resources for Coding</p>
+                        <p class="author">Fraz</p>
+                        <p class="time">1.4M views 2 years ago</p>
+                    </div>
+                </div>
+            </div> 
+
+
+            <div class="video-block">
+                <div class="thumbnail-div">
+                   <img class="thumbnail" src="thumbnails/youtube-thumbnail4.jpg" alt="">
+                   <div class="video-time">6:14:07</div>
+                </div>
+                <div class="video-info">
+                    <div class="profile-div">
+                        <img  class="profile" src="channels/youtube-channel4.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="title">Python Full Course for Beginners</p>
+                        <p class="author">Programming with Mosh</p>
+                        <p class="time">43M views 18 Feb 2019</p>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="video-block">
+                <div class="thumbnail-div">
+                   <img class="thumbnail" src="thumbnails/youtube-thumbnail5.jpg" alt="">
+                   <div class="video-time">36:57</div>
+                </div>
+                <div class="video-info">
+                    <div class="profile-div">
+                        <img  class="profile" src="channels/youtube-channel5.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="title">  Git and GitHub - 0 Experience to Professional in 1 Tutorial (Part 1)</p>
+                        <p class="author">SuperSimpleDev</p>
+                        <p class="time">525K views 25 Feb 2021</p>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="video-block">
+                <div class="thumbnail-div">
+                   <img class="thumbnail" src="thumbnails/youtube-thumbnail6.jpg" alt="">
+                   <div class="video-time">2:30:08</div>
+                </div>
+                <div class="video-info">
+                    <div class="profile-div">
+                        <img  class="profile" src="channels/youtube-channel6.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="title">SQL Full Course in Telugu | Free Notes, Practice Questions & Interview Questions</p>
+                        <p class="author">Dodagatta Nihar</p>
+                        <p class="time">509K views 6 months ago</p>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="video-block">
+                <div class="thumbnail-div">
+                   <img class="thumbnail" src="thumbnails/youtube-thumbnail7.jpg" alt="">
+                   <div class="video-time">22:15:57</div>
+                </div>
+                <div class="video-info">
+                    <div class="profile-div">
+                        <img  class="profile" src="channels/youtube-channel7.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="title">JavaScript Tutorial Full Course - Beginner to Pro</p>
+                        <p class="author">SuperSimpleDev</p>
+                        <p class="time">3.9M views 9 months ago</p>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="video-block">
+                <div class="thumbnail-div">
+                   <img class="thumbnail" src="thumbnails/youtube-thumbnail8.jpg" alt="">
+                   <div class="video-time">3:07:07</div>
+                </div>
+                <div class="video-info">
+                    <div class="profile-div">
+                        <img  class="profile" src="channels/youtube-channel8.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="title">50+ HOURS REACT.JS 19 MONSTER CLASS</p>
+                        <p class="author">HuXn WebDev</p>
+                        <p class="time">223K views 1 month ago</p>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="video-block">
+                <div class="thumbnail-div">
+                   <img class="thumbnail" src="thumbnails/youtube-thumbnail9.jpg" alt="">
+                   <div class="video-time">54:55</div>
+                </div>
+                <div class="video-info">
+                    <div class="profile-div">
+                        <img  class="profile" src="channels/youtube-channel9.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="title">Excel for Beginners - The Complete Course</p>
+                        <p class="author">Technology for Teachers and Students</p>
+                        <p class="time"> 9M views  2 years ago  3 products</p>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="video-block">
+                <div class="thumbnail-div">
+                   <img class="thumbnail" src="thumbnails/youtube-thumbnail10.jpg" alt="">
+                   <div class="video-time">2:46:22</div>
+                </div>
+                <div class="video-info">
+                    <div class="profile-div">
+                        <img  class="profile" src="channels/youtube-channel10.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="title">Bootstrap CSS Framework - Full Course for Beginners</p>
+                        <p class="author">HuXn WebDev</p>
+                        <p class="time">1.4M views  3 years ago</p>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="video-block">
+                <div class="thumbnail-div">
+                   <img class="thumbnail" src="thumbnails/youtube-thumbnail11.jpg" alt="">
+                   <div class="video-time">11:55:28</div>
+                </div>
+                <div class="video-info">
+                    <div class="profile-div">
+                        <img  class="profile" src="channels/youtube-channel10.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="title">React Course - Beginner's Tutorial for React JavaScript Library [2022]</p>
+                        <p class="author">HuXn WebDev</p>
+                        <p class="time">4.1M views 3 years ago</p>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="video-block">
+                <div class="thumbnail-div">
+                   <img class="thumbnail" src="thumbnails/youtube-thumbnail12.jpg" alt="">
+                   <div class="video-time">57:34</div>
+                </div>
+                <div class="video-info">
+                    <div class="profile-div">
+                        <img  class="profile" src="channels/youtube-channel12.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="title">Learn The MERN Stack - Express & MongoDB Rest API</p>
+                        <p class="author">Traversy Media</p>
+                        <p class="time">518K views 3 years ago</p>
+                    </div>
+                </div>
+            </div> 
+   </div>
+
+</body>
+</html>

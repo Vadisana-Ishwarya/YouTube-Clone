@@ -1,0 +1,63 @@
+  .category-bar {
+    display: flex; 
+    background-color: rgb(247, 247, 247);
+    padding: 10px 2px; 
+    position: fixed;
+    top: 45px; 
+    left: 190px;
+    right: 0;
+    z-index: 99;
+    white-space: nowrap; /* Prevents text from wrapping */
+    flex-wrap: nowrap; /* Keeps buttons in a single row */
+   
+
+  }
+
+ .category {           
+   
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative; /* Added */
+}
+
+.category:hover {
+    background-color: rgb(186, 186, 186);
+}
+
+
+.category:hover::after {
+    content: attr(data-text);
+    position: absolute;
+    background-color: rgb(43, 42, 42);
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    padding: 5px 8px;
+    font-size: 12px;
+    white-space: nowrap;
+    top: 150%; 
+    left: 50%;
+    opacity: 0; 
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    
+   
+}
+ .category:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+    
+} 
+.category.active {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}   
